@@ -10,7 +10,7 @@ class ToDoController:
         self.model = model
         self.view = view
 
-        # Fetch the ToDos form the model and update the view accordingly.
+        # Fetch the ToDos from the model and update the view accordingly.
         for todo in self.model.get_todos():
             self.create_todo_widget(todo)
 
